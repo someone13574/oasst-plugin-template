@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Template Plugin (replace)",
+    "name_for_model": "template-plugin (replace)",
+    "description_for_human": "A plugin which is actually just a template (replace)",
+    "description_for_model": "A plugin which is actually just a template (replace)",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "${PLUGIN_URL}/openapi.json",
+        "has_user_authentication": false
+    },
+    "logo_url": "${PLUGIN_URL}/icon.png",
+    "contact_email": "your_email@example.com",
+    "legal_info_url": "https://example.com"
+}
