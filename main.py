@@ -1,5 +1,6 @@
 import json
 import os
+from typing import Annotated
 from fastapi import FastAPI, Response, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi
@@ -17,7 +18,7 @@ app.add_middleware(
 
 
 @app.get("/test-function", operation_id="testFunction", summary="This is a test function")
-async def test_function(example_var_1: str = Query(..., description="An example string variable"), example_var_2: int = Query(42, description="Example integer with default")) -> Response:
+async def test_function(example_var_1: Annotated[str, Query(description="An example string variable")], example_var_2: Annotated[int, Query(description="Example integer with default")] = 42) -> Response:
     try:
         print(example_var_2)
 
