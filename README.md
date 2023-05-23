@@ -23,7 +23,7 @@
 
 ## Debugging
 
-It is unlikely that your plugin will work the first time. There are two primary was it will fail, Open Assistant not using it correctly and your code being faulty. If Open Assistant isn't using it correctly look through the 'inner_monologue' on the Open Assistant site and see what it is doing and then try to change your descriptions, function names, and variable names to encorage the correct behavior. If the plugin is being used correctly but still failing you can check the logs of the deployment on Vercel and fix any problems (You can add print statements to your code which show up in the logs). To change your code simply add a new commit or amend and force push an old commit and it will automatically re-deploy with the changes.
+It is unlikely that your plugin will work the first time. There are two primary ways it will fail, Open Assistant not using it correctly and your code being faulty. If Open Assistant isn't using it correctly look through the 'inner_monologue' on the Open Assistant site and see what it is doing and then try to change your descriptions, function names, and variable names to encorage the correct behavior. If the plugin is being used correctly but still failing you can check the logs of the deployment on Vercel and fix any problems (You can add print statements to your code which show up in the logs). To change your code simply add a new commit or amend and force push an old commit and it will automatically re-deploy with the changes.
 
 ## Additional Resources
 
